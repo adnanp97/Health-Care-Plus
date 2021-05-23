@@ -1,24 +1,24 @@
- /* death toll */
-#death_number{
-  margin-bottom:20px;
+/* death toll */
+#death_number {
+  margin-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   font-size: 50px;
   font-weight: 900;
 }
-.red{
+.red {
   color: red;
 }
 
 /*  */
-
 
 /* caroussel */
 
 .caroussel {
   position: relative;
   /* height: 500px; */
-  background-color: lightblue;
+  /* background-image: url(../images/covid4.jpeg); */
+  color: black;
   /* padding-top: 2.3em; */
 }
 
@@ -32,6 +32,31 @@
 .caroussel .caroussel__item__visible {
   display: block;
   animation: fadeIn 1s;
+}
+
+.caroussel .caroussel__item__visible #covid_background {
+  background-image: url(../images/covid2.jpeg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.caroussel
+  .caroussel__item__visible
+  #covid_background
+  #covid_background_video_container {
+  text-align: center;
+}
+.caroussel
+  .caroussel__item__visible
+  #covid_background
+  #covid_background_video_container
+  iframe {
+  display: inline-block;
+  margin: 0.5rem auto;
+   width: 50%;
+   height: 350px;
 }
 
 .caroussel .caroussel__item img {
@@ -62,6 +87,7 @@
 
 .caroussel .caroussel__actions button#caroussel__button__prev {
   margin-left: 20px;
+  transform: rotate(180deg);
 }
 
 .caroussel .caroussel__actions button#caroussel__button__next {
@@ -87,7 +113,8 @@
   transition: background-color 2.5s ease;
 }
 
-.active, .caroussel__dot:hover {
+.active,
+.caroussel__dot:hover {
   background-color: #717171;
 }
 
@@ -99,25 +126,32 @@
   height: inherit;
 }
 
-
 .caroussel .caroussel__item .title {
   text-align: center;
   font-size: 3.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin-top: 0;
+  color: white;
 }
 
 .caroussel .caroussel__item .subtitle {
   text-align: center;
   font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 
 .caroussel .caroussel__item .symptoms {
   display: flex;
-  
+}
+
+.caroussel .caroussel__item #symptom_content {
+  background-image: url(../images/covid4.jpeg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .caroussel .caroussel__item .symptoms__left {
@@ -141,32 +175,33 @@
   background-color: white;
   color: black;
   border-radius: 50%;
-  width: 10vw;
-  height: 10vw;
-  font-size: 0.8em;
+  width: 15vw;
+  height: 15vw;
+  font-size: 1.1em;
   display: flex;
   justify-content: left;
   align-items: center;
   overflow: hidden;
   padding: 10px;
+  text-align: center;
 }
 
 /* topics */
-a{
+a {
   text-decoration: none;
   color: black;
   font-size: 20px;
 }
-a:hover{
-  color:grey;
+a:hover {
+  color: grey;
 }
 /* seperate page titles */
-h1{
+h1 {
   text-align: center;
   margin-top: 30px;
 }
 
-#home_nav{
+#home_nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,4 +220,3 @@ h1{
     opacity: 1;
   }
 }
-                                                                                              

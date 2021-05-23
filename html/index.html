@@ -21,8 +21,7 @@
     />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/home.css" />
-    <link rel="stylesheet" href="../styles/reusable.css">
-
+    <link rel="stylesheet" href="../styles/reusable.css" />
   </head>
 
   <body>
@@ -37,7 +36,6 @@
             src="../images/girl_mask.svg"
             alt="Cartoon girl with mask"
           />
-          
         </a>
       </div>
       <div class="heading__right">
@@ -47,46 +45,48 @@
 
     <div class="caroussel">
       <div class="caroussel__item caroussel__item__visible">
-        <img src="../images/covid2.jpeg" alt="covid2" />
-      </div>
-      <div class="caroussel__item">
-        <img src="../images/covid3.jpeg" alt="covid3" />
-      </div>
-      <div class="caroussel__item">
-        <h1 class="title">COVID-19</h1>
-        <h2 class="subtitle">SYMPTOMS</h2>
-        <div class="symptoms">
-          <div class="symptoms__left"></div>
-          <div class="symptoms__center">
-            <div class="symptom">
-              <p>
-                symptom 1 is Lorem Ipsum passages, and more recently with
-                desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum
-              </p>
-            </div>
-            <div class="symptom">
-              <p>
-                symptom 2 is Contrary to popular belief, Lorem Ipsum is not
-                simply random text. It has roots
-              </p>
-            </div>
-            <div class="symptom">
-              <p>
-                symptom 3 is Richard McClintock, a Latin professor at
-                Hampden-Sydney College in Virginia, looked up one of the more
-                obscure Latin words, consectetur, from a Lorem Ipsum passage,
-                and going through the cites
-              </p>
-            </div>
+        <div id="covid_background">
+          <h1 class="title">COVID-19 BACKGROUND</h1>
+          <div id="covid_background_video_container">
+            <iframe src="https://www.youtube.com/embed/i0ZabxXmH4Y"> </iframe>
           </div>
-          <div class="symptoms__right"></div>
+        </div>
+      </div>
+
+      <div class="caroussel__item">
+        <div id="symptom_content">
+          <h1 class="title">COVID-19 SYMPTOMS</h1>
+          <div class="symptoms">
+            <div class="symptoms__left"></div>
+            <div class="symptoms__center">
+              <div class="symptom">
+                <p>
+                  <strong>TEMPERATURE</strong> <br />
+                  High temperature; feels hot to touch your chest or back.
+                </p>
+              </div>
+              <div class="symptom">
+                <p>
+                  <strong>COUGHING</strong> <br />
+                  New and continuous cough. With coughing a lot for more than an hour, or 3 or more coughing
+                  episodes in 24 hours.
+                </p>
+              </div>
+              <div class="symptom">
+                <p>
+                  <strong>SMELL OR TASTE</strong> <br />
+                  Cannot smell or taste anything, or things smell or taste unusual.
+                </p>
+              </div>
+            </div>
+            <div class="symptoms__right"></div>
+          </div>
         </div>
       </div>
 
       <div class="caroussel__actions">
         <button id="caroussel__button__prev" aria-label="Previous Slide">
-          <
+          >
         </button>
         <button id="caroussel__button__next" aria-label="Next Slide">></button>
       </div>
@@ -94,7 +94,6 @@
       <div class="caroussel__dots">
         <span class="caroussel__dot active" onclick="showSlide(0)"></span>
         <span class="caroussel__dot" onclick="showSlide(1)"></span>
-        <span class="caroussel__dot" onclick="showSlide(2)"></span>
       </div>
     </div>
 
@@ -103,14 +102,6 @@
     </p>
 
     <section id="container" class="center_text">
-      <div>
-        <a href="covid_background.html"><h3>Covid 19 Background</h3></a>
-        <ul>
-          <li>1..............</li>
-          <li>2..............</li>
-          <li>3..............</li>
-        </ul>
-      </div>
       <div>
         <a href="vaccines.html"><h3>Vaccine information</h3></a>
         <ul>
@@ -129,11 +120,11 @@
       </div>
       <div>
         <a href="infographics.html"><h3>Infographics</h3></a>
-        <ul>
-          <li>1..............</li>
-          <li>2..............</li>
-          <li>3..............</li>
-        </ul>
+        <ol>
+          <li>Covid summarised</li>
+          <li>Mythbusters</li>
+          <li>Useful tips</li>
+        </ol>
       </div>
       <div>
         <a href="travel.html"><h3>World and travel</h3></a>
@@ -152,15 +143,7 @@
         </ul>
       </div>
       <div>
-        <a href="wellbeing.html"><h3>Well Being</h3></a>
-        <ul>
-          <li>1..............</li>
-          <li>2..............</li>
-          <li>3..............</li>
-        </ul>
-      </div>
-      <div>
-        <a href="wellbeing.html"><h3>Well Being</h3></a>
+        <a href="resources.html"><h3>Resources</h3></a>
         <ul>
           <li>1..............</li>
           <li>2..............</li>
@@ -169,7 +152,7 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class = "footer-position">
+    <footer class="footer-position">
       <div class="footer-container">
         <div class="subscribe">
           <h2>Subscribe to our page via Email for updates</h2>
@@ -185,7 +168,6 @@
             <p>fake info</p>
             <p>fake info</p>
           </div>
-          
         </div>
       </div>
       <div class="socials">
