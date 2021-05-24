@@ -1,0 +1,22 @@
+p{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  ​
+  li{
+    margin-left:300px;
+  }
+  ​
+  b{
+    margin-left: 100px;
+  }
+  /* footer css */
+  .footer-position {
+    bottom: 0;
+  }
+  .footer-container {
+    background: #f0f9ff;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px;
+  }

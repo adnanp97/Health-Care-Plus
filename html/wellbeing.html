@@ -1,79 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Care +</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/home.css" />
     <link rel="stylesheet" href="../styles/reusable.css" />
-  </head>
+    <link rel="stylesheet" href="../styles/wellbeing.css" />
 
-  <body>
+</head>
+
+<body>
     <header class="heading">
-      <div class="heading__left">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="heading__center">
-        <a id="home_nav" href="index.html">
-          <h1 id = "home_title_nav">Health Care</h1>
-          <img
-            id="logo_nav"
-            src="../images/green_plus.svg"
-            alt="Green plus logo"
-          />
-        </a>
-      </div>
-      <div class="heading__right">
-        <i class="fas fa-user"></i>
-      </div>
+        <div class="heading__left">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="heading__center">
+            <a id="home_nav" href="index.html">
+                <h1 id="home_title_nav">Health Care</h1>
+                <img id="logo_nav" src="../images/green_plus.svg" alt="Green plus logo" />
+            </a>
+        </div>
+        <div class="heading__right">
+            <i class="fas fa-user"></i>
+        </div>
     </header>
-  
-   
-    <!-- footer -->
-    <footer class = "footer-position">
-      <div class="footer-container">
-        <div class="subscribe">
-          <h2>Subscribe to our page via Email for updates</h2>
-          <p>Blank blank fake contact information will go here</p>
-          <div class="subscribe-form">
-            <input type="text" placeholder="Email Address" />
-            <div class="btn">Subscribe</div>
-          </div>
+    <div>
+        <video autoplay loop id="myVideo">
+            <source src="../video/safety.mp4" type="video/mp4">
+            </video>><br>
+        <div class="content">
+            <h1>Wellbeing</h1>
+            <p> COVID-19 has now had a far reaching impact on people right across the world and it’s important during this time to take care of your mind as well as your body.
+            </p>
+            <p> Everyone will be reacting in their own way. You might be: • Feeling frustrated or lonely. • Concerned about your finances, your health, relationships or relatives. • Feeling down, worried or anxious. Remember, it is OK to feel like this. These
+                are normal reactions to uncertainty and to challenging events.</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
         </div>
-        <div class="footer-links">
-          <div class="col1">
-            <p>+1- fake number</p>
-            <p>fake info</p>
-            <p>fake info</p>
-          </div>
-          
-        </div>
-      </div>
-      <div class="socials">
-        <p>fake info</p>
+    </div><br><br><br>
 
-        <div class="social-icons">
-          <img src="./images/instagram.png" alt="" />
-          <img src="./images/twitter.png" alt="" />
-          <img src="./images/fb.png" alt="" />
+    <script>
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+    <div class="takecare">
+        <h2>Covid Symptoms</h2>
+    </div>
+    <p>Self-isolate if you or anyone in your household has symptoms. You can check your symptoms at NHS 111 online. This means you should not leave home if you or someone you live with has either: a high temperature – this means you feel hot to touch on
+        your chest or back (you do not need to measure your temperature) a new, continuous cough – this means coughing a lot for more than an hour, or three or more coughing episodes in 24 hours (if you usually have a cough, it may be worse than usual)
+        a change in your normal sense of taste or smell (known as anosmia)</p>
+    <p>You should go for a test immediately. The only time you should leave the house is to go for a test. Tests can be booked online at <a href="https://111.nhs.uk/covid-19/" style="color:red"> 
+        NHS Helpline </a> or by calling 119. Do not go to GP surgery, pharmacy, walk-in centre or hospital if you think you might have coronavirus. Stay at home. If you start to have symptoms, you must get tested and the rest of your household should
+        self-isolate with you whilst you wait for the results.
+        <a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance/stay-at-home-guidance-for-households-with-possible-coronavirus-covid-19-infection" style="color: red"> More Information </a></p><br><br>
+    <div class="mental">
+        <h3>Mental Wellbeing While Staying At Home</h3>
+    </div>
+    <p>Taking care of your mind as well as your body is really important if you are staying at home because of coronavirus (COVID-19). You may feel worried or anxious about your finances, your health or those close to you. Perhaps you feel bored, frustrated
+        or lonely. It's important to remember that it's OK to feel this way and that everyone reacts differently.Remember, for most of us, these feelings will pass. Staying at home may be difficult, but you're helping to protect yourself and others by
+        doing it. There are things you can do now to help you keep on top of your mental wellbeing and cope with how you may feel if you're staying at home. Make sure you get further support if you feel you need it. For more information
+        <a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance" style="color: red">Click Here</a></p><br><br>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="inner-footer">
+            <div class="social-links">
+                <ul>
+                    <li class="social-items"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-items"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+  
+                </ul>
+            </div>
+  
+            <div class="quick-links">
+                <ul>
+                    <li class="quick-items"><a href="#">Home</a></li>
+                    <li class="quick-items"><a href="#">About</a></li>
+                    <li class="quick-items"><a href="#">Resources</a></li>
+                    <li class="quick-items"><a href="#">Health</a></li>
+                    <li class="quick-items"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+  
+       <div class="outer-footer">
+           &copy; Health Care Plus | Designed by Group 1
+       </div> 
     </footer>
-  </body>
+</body>
+
 </html>
