@@ -4,13 +4,11 @@ body {
   padding: 0;
   font-family: "Oswald", sans-serif;
   scroll-behavior: smooth;
-
 }
 
 #main-container {
   display: flex;
   flex-direction: row;
-  
 }
 
 #navbar-container {
@@ -26,8 +24,8 @@ body {
   justify-content: center;
   text-align: center;
 }
-#navbar-container h3{
-  color: #cf404d; 
+#navbar-container h3 {
+  color: #cf404d;
 }
 #navbar-container a {
   padding: 15px 0;
@@ -50,6 +48,15 @@ body {
   width: 100%;
   
 }
+
+.conent-header{
+  text-align: center;
+  background-color: #cf404d ;
+  color: white;
+  padding: 5px;
+}
+
+
 /* landing container */
 #landing-container {
   background-image: url(../images/covid5.jpeg);
@@ -67,26 +74,103 @@ body {
 }
 
 /* Space/Margin on all containers so doesnt touch edges */
-.space-container{
-  height:100%;
+.space-container {
+  height: 100%;
   margin: 20px;
+  /* height: max-content; */
+}
 
- }
- 
+.coronavirus-subcontainer {
+  background-color: #1b2835;
+  color: white;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
 
-
-
-
+}
+.coronavirus-subcontainer h4 {
+  color: #cf404d;
+}
 
 /* COVID BACKGROUND */
-/* covid background container */
+
+#covid-background-video-container iframe {
+  display: inline-block;
+  margin: 0.5rem auto;
+  width: 100%;
+  height: 400px;
+}
 
 /* SYMPTOMS */
 
+#symptoms-content {
+  background-image: url(../images/covid4.jpeg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.symptoms-subconent{
+  display: flex;
+  align-items: center;
+
+  color: white;
+  border: 1px solid black;
+  background-color: rgba(0,0,0,0.8);
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+
+  padding: 10px;
+  font-size: 1.0em;
+}
+
+.symptom-type{
+  color: #cf404d;
+  font-size: 30px;
+
+}
 
 /*  TIME LINE */
 
+/*INFOGRAPHICS*/
 
+.thumbnails img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px #cf404d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
 /* 
   ::-webkit-scrollbar {
