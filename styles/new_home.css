@@ -80,6 +80,9 @@ body {
   /* height: max-content; */
 }
 
+.timeline-container {
+  margin: 20px;
+}
 .coronavirus-subcontainer {
   background-color: #1b2835;
   color: white;
