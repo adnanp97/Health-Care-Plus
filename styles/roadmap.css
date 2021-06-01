@@ -1,15 +1,30 @@
-p{
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  ​
-  li{
-    margin-left:300px;
-  }
-  ​
-  b{
-    margin-left: 100px;
-  }
+
+#roadmaplist{
+  margin-left:0px;
+}
+
+#boldroadmap{
+  margin-left: 10px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgb(163, 159, 219);
+  transition: 0.3s;
+  border-radius: 20px;
+  
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5px 16px;
+}
   /* footer css */
   .footer-position {
     bottom: 0;
@@ -19,4 +34,11 @@ p{
     display: flex;
     justify-content: space-between;
     padding: 22px;
+  }
+
+  #picstyling {
+    
+    width: 35vw;
+    height: 35vw;
+    overflow: hidden;
   }
